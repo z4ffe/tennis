@@ -1,0 +1,91 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 6rem 1fr 6rem;
+  grid-template-rows: 2rem 1fr 2rem;
+  grid-template-areas: "date date date"
+                       "playerone main playertwo"
+                       "sets sets sets";
+  gap: 0 2rem;
+  border-radius: 10px;
+  background-color: #cfeffb;
+  width: 60%;
+  height: 7rem;
+  color: #4C5B61;
+
+  .player_one {
+    grid-area: playerone;
+    font-size: 2rem;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+    grid-area: main;
+    font-size: 1.3rem;
+    align-items: center;
+
+    .main_playerone {
+      justify-self: center;
+    }
+
+    .main_divier {
+      justify-self: center;
+      opacity: .4;
+    }
+
+    .main_playertwo {
+      justify-self: center;
+    }
+  }
+
+  .player_two {
+    grid-area: playertwo;
+    font-size: 2rem;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .main_date {
+    grid-area: date;
+    font-size: .8rem;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 1rem;
+    opacity: .4;
+  }
+
+  .main_sets {
+    grid-area: sets;
+    justify-self: start;
+    margin-left: 1rem;
+    font-size: .9rem;
+    opacity: .4;
+  }
+
+  .main_sets2 {
+    grid-area: sets;
+    justify-self: end;
+    font-size: .9rem;
+    margin-right: 1rem;
+    opacity: .4;
+  }
+}
+
+@media only screen and (min-width: 355px) and (max-width: 900px) {
+  .wrapper {
+    height: 11rem;
+    width: 100%;
+    grid-template-columns: 4rem 1fr 4rem;
+    grid-template-rows: 2rem 1fr 2rem;
+    align-items: center;
+    justify-content: center;
+
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+

@@ -1,0 +1,58 @@
+@import "../../assets/styles/variables";
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: $hfcolor;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px black;
+
+  .logo {
+    font-size: 1.2rem;
+    margin-right: .5rem;
+    margin-left: 4vw;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: $maintext !important;
+  }
+
+  .links {
+    margin-right: 4vw;
+  }
+
+  .burger {
+    display: none;
+  }
+  .drawer {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .wrapper {
+    .logo {
+      margin-left: 5vw;
+    }
+
+    .links {
+      display: none;
+    }
+
+    .burger {
+      display: block;
+      margin-right: 1.3rem;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+

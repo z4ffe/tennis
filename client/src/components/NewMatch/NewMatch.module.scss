@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  margin: 1rem auto 0;
+  justify-content: center;
+
+  .form {
+    background-color: #cfeffbd6;
+    padding: 2rem 10rem 1rem;
+    border-radius: 1rem;
+    min-height: fit-content;
+
+    .title {
+      text-align: center;
+      color: #4C5B61;
+    }
+
+    .date {
+      display: flex;
+      width: 65%;
+      margin: 1rem auto 0;
+    }
+
+    .password {
+      display: flex;
+      width: 65%;
+      margin: 1rem auto 0;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      margin: 1rem auto 0;
+      width: 21rem;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 355px) and (max-width: 767px) {
+  .wrapper {
+    .form {
+      width: 100%;
+      padding: 2rem;
+      max-height: fit-content;
+    }
+  }
+}
